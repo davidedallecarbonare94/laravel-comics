@@ -1,0 +1,22 @@
+header{
+    .bg_blue{
+        background-color: $bg_blue;
+        .top_header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 1rem;
+        }
+    }
+    .main_nav .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0rem;
+        img{
+            width: 80px;
+        }
+    }
+}

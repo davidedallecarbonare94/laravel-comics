@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.bg_blue {
+  background-color: #0282f9;
+}
+
+header .bg_blue {
+  background-color: #0282f9;
+}
+header .bg_blue .top_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+header .main_nav .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+}
+header .main_nav .container img {
+  width: 80px;
+}
+
+footer .shop_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+footer .shop_section a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .shop_section a img {
+  height: 50px;
+  padding-right: 2rem;
+}
