@@ -33,6 +33,27 @@ header .main_nav .container {
 header .main_nav .container img {
   width: 80px;
 }
+header .jumbotron {
+  background-image: url(../../img/jumbotron.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.comics {
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.comics .card {
+  width: calc(90% / 6);
+  display: flex;
+  flex-direction: row;
+}
+.comics .card img {
+  height: 100px;
+  width: 100px;
+}
 
 footer .shop_section {
   display: flex;
