@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -11,6 +15,10 @@
 
 .bg_blue {
   background-color: #0282f9;
+}
+
+a {
+  text-decoration: none;
 }
 
 header .bg_blue {
@@ -37,22 +45,40 @@ header .jumbotron {
   background-image: url(../../img/jumbotron.jpg);
   background-size: cover;
   height: 500px;
+  position: relative;
 }
 
 .comics {
   background-color: #1c1c1c;
+  position: relative;
+}
+.comics .current_series {
+  position: absolute;
+  left: 15%;
+  top: -5%;
+  color: white;
+  background-color: #0282f9;
+  padding: 0.75rem 0.75rem;
+}
+.comics .container {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 3rem 0rem 1rem 0rem;
 }
-.comics .card {
+.comics .container .card {
   width: calc(90% / 6);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 1rem;
 }
-.comics .card img {
-  height: 100px;
-  width: 100px;
+.comics .container .card img {
+  height: 180px;
+  width: 180px;
+}
+.comics .container .card p {
+  color: white;
 }
 
 footer .shop_section {
@@ -70,4 +96,37 @@ footer .shop_section a {
 footer .shop_section a img {
   height: 50px;
   padding-right: 2rem;
+}
+
+.comic .img_thumb {
+  position: absolute;
+  top: 400px;
+  left: 384px;
+}
+.comic .blue_bar {
+  height: 60px;
+  background-color: #0282f9;
+}
+.comic .description {
+  margin-top: 4rem;
+  width: 60%;
+}
+.comic .description h2 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.comic .description .price_avail {
+  color: white;
+  background-color: #55ba59;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.comic .description .price_avail .availability {
+  display: flex;
+  flex: row;
+}
+.comic .description .price_avail .availability .available {
+  padding-right: 1rem;
 }

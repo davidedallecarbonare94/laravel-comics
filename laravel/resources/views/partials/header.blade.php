@@ -25,7 +25,6 @@
                 </div>
             </nav>
             <div class="jumbotron">
-
             </div>
 
     </header>

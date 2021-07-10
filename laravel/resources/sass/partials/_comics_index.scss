@@ -1,15 +1,33 @@
 .comics{
     background-color: rgba(28, 28, 28, 1);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .card{
-        width: calc(90% / 6);
+    position: relative;
+    .current_series{
+        position: absolute;
+        left: 15%;
+        top: -5%;
+        color: white;
+        background-color: $bg_blue;
+        padding: 0.75rem .75rem;
+    }
+    .container{
+
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        img{
-            height: 100px;
-            width: 100px;
+        flex-wrap: wrap;
+        padding: 3rem 0rem 1rem 0rem;
+        .card{
+            width: calc(90% / 6);
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            img{
+                height: 180px;
+                width: 180px;
+            }
+            p{
+                color: white;
+            }
         }
     }
 }  
