@@ -27,24 +27,34 @@
     <div class="grey_specs">
         <div class="container">
             <div class="talent">
+                <h2>Talent</h2>
                 <div class="artist">
-                    <p>Art by: </p>
-                    @foreach($comic["artists"] as $artist)
-                    <a href="">{{ $artist }}</a>
-                    @endforeach
+                    <div class="left">
+                        <p>Art by: </p>
+                    </div>
+                    <div class="right">
+                        @foreach($comic["artists"] as $artist)
+                        <a href="">{{ $artist }}</a>
+                        @endforeach
+                    </div>
                 </div>
                 <div class="writers">
-                    <p>Written by: </p>
-                    @foreach($comic["writers"] as $writer)
-                    <a href="">{{ $writer }}</a>
-                    @endforeach
+                    <div class="left">
+                        <p>Written by: </p>
+                    </div>
+                    <div class="right">
+                        @foreach($comic["writers"] as $writer)
+                        <a href="">{{ $writer }}</a>
+                        @endforeach
+                    </div>
                 </div>
 
             </div>
             <div class="specs">
-                <p>{{ $comic['sale_date']}}</p>
-                <p>{{ $comic['series']}}</p>
-
+                <h2>Specs</h2>
+                <p><strong>Series: </strong><a href="">{{ $comic['series']}}</a></p>
+                <p><strong>U.S. Price: </strong>{{ $comic['price']}}</p>
+                <p><strong>On Sale Date: </strong>{{ $comic['sale_date']}}</p>
             </div>
 
         </div>

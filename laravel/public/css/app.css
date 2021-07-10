@@ -130,3 +130,44 @@ footer .shop_section a img {
 .comic .description .price_avail .availability .available {
   padding-right: 1rem;
 }
+.comic .grey_specs {
+  background-color: #f6f6f6;
+}
+.comic .grey_specs .container {
+  display: flex;
+  flex-direction: row;
+}
+.comic .grey_specs .container .talent {
+  width: 50%;
+}
+.comic .grey_specs .container .talent .artist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.comic .grey_specs .container .talent .artist .left {
+  width: 30%;
+}
+.comic .grey_specs .container .talent .artist .right {
+  width: 60%;
+}
+.comic .grey_specs .container .talent .artist .right a {
+  color: #0282f9;
+}
+.comic .grey_specs .container .talent .writers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.comic .grey_specs .container .talent .writers .left {
+  width: 30%;
+}
+.comic .grey_specs .container .talent .writers .right {
+  width: 60%;
+}
+.comic .grey_specs .container .talent .writers .right a {
+  color: #0282f9;
+}
+.comic .grey_specs .container .specs {
+  width: 50%;
+}
